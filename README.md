@@ -1,13 +1,16 @@
 # FlaskProj
 
+
 ## Technical Requirements
 - [Python](https://www.python.org/downloads/)
 - [pip](https://pip.pypa.io/en/stable/installation/)
 - [virtual environment](https://docs.python.org/3/library/venv.html)
-- [MongoDB](https://www.mongodb.com/)
+- [MongoDB](https://www.mongodb.com/try/download/community).
 
 
 ## Installation
+Write these commands in terminal
+
 1. create virtual environment
 
 For Windows run:
@@ -18,9 +21,9 @@ py -m pip --version
 
 py -m pip install --user virtualenv
 
-py -m venv duct_env
+py -m venv flask_env
 
-.\duct_env\Scripts\activate
+.\flask_env\Scripts\activate
 ```
 
 
@@ -32,20 +35,20 @@ python3 -m pip --version
 
 python3 -m pip install --user virtualenv
 
-python3 -m venv duct_env
+python3 -m venv flask_env
 
-source duct_env/bin/activate
+source flask_env/bin/activate
+
+```
+2. Install requirements:
+```sh
+pip install -r requirements.py
+
 ```
 
-2. Change Directory:
+3. Run command in terminal:
 ```sh
-cd flask_code_sample
+flask --app run.py run
+
 ```
-3. Install requirements:
-```sh
-pip install -r requirement.txt
-```
-4. Run command:
-```sh
-python main.py 
-```
+
